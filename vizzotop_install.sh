@@ -128,6 +128,8 @@ function update_config() {
   sed -i 's/daemon=1/daemon=0/' $CONFIGFOLDER/$CONFIG_FILE
   cat << EOF >> $CONFIGFOLDER/$CONFIG_FILE
 logintimestamps=1
+staking=0
+masternodesoftlock=1
 maxconnections=256
 #bind=$NODEIP
 masternode=1
